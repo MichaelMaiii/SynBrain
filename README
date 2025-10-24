@@ -1,0 +1,63 @@
+# SynBrain
+Official repository for the paper **SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning**.
+
+<!-- [//]: # (## Results)
+
+[//]: # (The following are a few reconstructions obtained : )
+
+[//]: # (<p align="center"><img src="./figures/Reconstructions.png" width="600" ></p>)
+
+[//]: # (## fMRI-to-Image Pipeline) -->
+
+### Requirements
+* Create conda environment using environment.yaml in the main directory by entering `conda env create -f requirements.yml` . It is an extensive environment and may include redundant libraries. You may also create environment by checking requirements yourself. 
+
+### Data Acquisition and Processing
+
+ps. You need to set your own path to run the code.
+
+1. Download NSD data from NSD AWS Server;
+2. Download "COCO_73k_annots_curated.npy" file from [HuggingFace NSD](https://huggingface.co/datasets/pscotti/naturalscenesdataset/tree/main);
+3. Prepare visual stimuli and fMRI data;
+    ```
+    cd data
+    python download_nsddata.py
+    python prepare_nsddata_sclae.py -sub x
+    ```
+4. Extract CLIP image embedding by running `extract_features_sdxl_unclip.ipynb`
+
+
+### Stage1-BrainVAE: 
+
+Run `src/vae/train_vae.py` for BrainVAE training
+
+ps. Change sys.path/save_path/data_path to run the code correctly.
+
+
+### Stage2-S2N Mapper:
+
+Run `src/s2n/run_sit_os.sh` for subject-specific S2N mapper training.
+
+Run `src/s2n/run_sit_os_ft.sh` for subject-adaptive S2N mapper training.
+
+### Inference:
+
+Run `src/s2n/generate.py` for Visual-to-fMRI synthesis.
+
+
+### Evaluation:
+
+Run `src/s2n/eval.py` for Voxel-level and Semantic-level evaluation.
+
+
+### Citation
+```
+@article{mai2025synbrain,
+  title={SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning},
+  author={Mai, Weijian and Wu, Jiamin and Zhu, Yu and Yao, Zhouheng and Zhou, Dongzhan and Luo, Andrew F and Zheng, Qihao and Ouyang, Wanli and Song, Chunfeng},
+  journal={arXiv preprint arXiv:2508.10298},
+  year={2025}
+}
+```
+
+

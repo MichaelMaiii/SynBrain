@@ -1,0 +1,17 @@
+model:
+  params:
+    ddconfig:
+      double_z: False
+      z_channels: 256
+      resolution: 512
+      in_channels: 1
+      out_ch: 1
+      ch: 128
+      ch_mult: [2,4,4]
+      ada_length: 8192
+      num_res_blocks: 2
+      num_down_blocks: 1
+      num_up_blocks: 1
+      attn_resolutions: [ ]
+      dropout: 0.0
+      maxpool: True
