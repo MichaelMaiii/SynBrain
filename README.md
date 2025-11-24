@@ -1,6 +1,10 @@
-# SynBrain
-Official repository for the paper **SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning**.
-[arXiv](https://arxiv.org/pdf/2508.10298)
+# NeurIPS 2025 | SynBrain 🧠✨🤖
+<!-- Official repository for the paper **SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning**.
+[arXiv](https://arxiv.org/pdf/2508.10298) -->
+
+## [SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning](https://arxiv.org/pdf/2508.10298) 
+
+<br><img src='SynBrain.png' align="center"><br>
 
 ### Requirements
 * Create conda environment using environment.yaml in the main directory by entering `conda env create -f requirements.yml` . It is an extensive environment and may include redundant libraries. You may also create environment by checking requirements yourself. 
