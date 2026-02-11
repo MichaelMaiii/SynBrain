@@ -6,6 +6,13 @@
 
 <br><img src='SynBrain.png' align="center"><br>
 
+### Update
+* Checkpoints for Sub-1 and Sub2
+* Generation results of SynBrain for all subjects
+* Data for quick evaluation
+
+Download files from [HuggingFace SynBrain](https://huggingface.co/MichaelMaiii/SynBrain/tree/main).
+
 ### Requirements
 * Create conda environment using environment.yaml in the main directory by entering `conda env create -f requirements.yml` . It is an extensive environment and may include redundant libraries. You may also create environment by checking requirements yourself. 
 
