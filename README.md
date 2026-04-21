@@ -6,6 +6,10 @@
 
 <br><img src='SynBrain.png' align="center"><br>
 
+### News
+* [NeuroFlow](https://github.com/MichaelMaiii/NeuroFlow) has been accepted by CVPR 2026!!!
+* Our improved work **NeuroFlow** unifies visual encoding and decoding from neural activity with semantic consistency within a cross-modal flow model.
+
 ### Update
 * Checkpoints for Sub-1 and Sub2
 * Generation results of SynBrain for all subjects
